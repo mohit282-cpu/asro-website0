@@ -1,0 +1,14 @@
+# ASRO - Applied Science & Research Organization
+# Robots.txt for SEO optimization
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://appliedscienceresearchorganization.org.np/sitemap.xml
+
+# Disallow internal utility pages
+Disallow: /404.html
+Disallow: /email.html
+Disallow: /admin/
+Disallow: /private/

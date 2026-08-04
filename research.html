@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics 4 (GA4) - ASRO Nepal -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ASRONEPAL123"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ASRONEPAL123');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover ASRO's STEM research programs in Biratnagar, Nepal. We offer IoT training, robotics workshops, astronomy observation, mobile labs, and hands-on science experiments for students.">
+  <meta name="keywords" content="ASRO research Biratnagar Nepal, IoT Training Nepal, Robotics Nepal, Astronomy Workshop Nepal, Science Education Nepal, STEM Education Nepal">
+  <meta name="author" content="ASRO - Applied Science &amp; Research Organization">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Research Programs — ASRO | STEM Education, IoT &amp; Robotics Nepal">
+  <meta property="og:description" content="ASRO offers IoT training, robotics workshops, astronomy observation, mobile labs, and hands-on science experiments in Biratnagar, Nepal.">
+  <meta property="og:image" content="https://appliedscienceresearchorganization.org.np/logo.png">
+  <meta property="og:url" content="https://appliedscienceresearchorganization.org.np/research.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://appliedscienceresearchorganization.org.np/research.html">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["HowTo", "WebPage"],
+  "name": "ASRO STEM Research Programs - IoT, Robotics, Astronomy & Mobile Labs",
+  "description": "ASRO offers hands-on science programs including IoT training, robotics workshops, astronomy observation, and mobile lab services for students across Nepal."
+}
+  </script>
+
+  <title>Research Programs — ASRO | STEM Education, IoT &amp; Robotics Nepal</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style.css">
+<style>
+.research-intro-grid {
+  display: grid; grid-template-columns: 3fr 2fr; gap: 64px; align-items: start;
+  margin-bottom: 72px;
+}
+.research-programs {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px;
+}
+.prog-card {
+  background: white; border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);
+  transition: .28s; position: relative;
+}
+.prog-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.prog-card-header {
+  background: linear-gradient(135deg, var(--navy-dark), var(--navy-mid));
+  padding: 28px; display: flex; align-items: flex-start; gap: 16px;
+}
+.prog-num {
+  font-family: 'Raleway', sans-serif; font-weight: 900; font-size: 44px;
+  color: rgba(90,158,58,0.25); line-height: 1; flex-shrink: 0; margin-top: -4px;
+}
+.prog-card-header h3 { font-size: 18px; font-weight: 800; color: white; }
+.prog-card-header p { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 4px; }
+.prog-card-body { padding: 24px; }
+.prog-card-body p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.prog-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+.prog-tag {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 3px 10px; border-radius: 100px;
+  background: var(--green-pale); color: var(--green); border: 1px solid rgba(90,158,58,0.2);
+}
+
+/* Equipment detail */
+.equip-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px;
+  margin-top: 48px;
+}
+.equip-card {
+  background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-md);
+  padding: 28px 24px; text-align: center; box-shadow: var(--shadow-sm); transition: .28s;
+  position: relative; overflow: hidden;
+}
+.equip-card::before {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  background: var(--green); transform: scaleX(0); transition: .28s;
+}
+.equip-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.equip-card:hover::before { transform: scaleX(1); }
+.equip-card .icon { font-size: 40px; margin-bottom: 14px; }
+.equip-card h4 { font-family: 'Raleway', sans-serif; font-weight: 800; font-size: 15px; color: var(--navy-dark); margin-bottom: 6px; }
+.equip-card p { font-size: 12px; color: var(--muted); }
+
+/* Safety panel */
+.safety-panel {
+  background: linear-gradient(135deg, var(--navy-dark), var(--navy-mid));
+  border-radius: var(--radius-lg); padding: 56px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+  position: relative; overflow: hidden;
+}
+.safety-panel::before {
+  content: ''; position: absolute; right: -80px; top: -80px;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(90,158,58,0.18) 0%, transparent 70%);
+}
+.safety-panel h2 { font-size: 36px; font-weight: 900; color: white; margin-bottom: 16px; }
+.safety-panel h2 span { color: var(--green-light); }
+.safety-panel p { color: rgba(255,255,255,0.7); font-size: 16px; line-height: 1.8; }
+.safety-rules { display: flex; flex-direction: column; gap: 16px; }
+.safety-rule {
+  display: flex; gap: 14px; align-items: flex-start;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-sm); padding: 16px;
+}
+.safety-rule-icon { font-size: 22px; flex-shrink: 0; }
+.safety-rule h4 { font-size: 14px; font-weight: 700; color: white; margin-bottom: 4px; }
+.safety-rule p { font-size: 13px; color: rgba(255,255,255,0.6); }
+
+.info-box {
+  background: var(--green-pale); border: 1px solid rgba(90,158,58,0.25);
+  border-radius: var(--radius-md); padding: 24px 28px;
+}
+.info-box h4 { font-family: 'Raleway', sans-serif; font-weight: 800; color: var(--navy-dark); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.info-box p { color: var(--muted); font-size: 15px; }
+
+@media (max-width: 768px) {
+  .research-intro-grid { grid-template-columns: 1fr; gap: 32px; }
+  .safety-panel { grid-template-columns: 1fr; padding: 32px 24px; }
+  .safety-panel h2 { font-size: 26px; }
+  .research-programs { grid-template-columns: 1fr; }
+  .prog-card-header { padding: 20px; }
+  .prog-num { font-size: 32px; }
+  .prog-card-header h3 { font-size: 16px; }
+  .prog-card-body { padding: 20px; }
+  .equip-grid { grid-template-columns: repeat(auto-fill, minmax(min(160px, 100%), 1fr)); gap: 14px; }
+  .equip-card { padding: 20px 16px; }
+  .equip-card .icon { font-size: 32px; margin-bottom: 10px; }
+  .equip-card h4 { font-size: 13px; }
+}
+
+@media (max-width: 540px) {
+  .safety-panel { padding: 24px 16px; }
+  .safety-panel h2 { font-size: 22px; }
+  .safety-panel p { font-size: 14px; }
+  .safety-rule { padding: 12px; }
+  .equip-grid { grid-template-columns: repeat(auto-fill, minmax(min(140px, 100%), 1fr)); }
+  .info-box { padding: 18px 20px; }
+}
+
+@media (max-width: 360px) {
+  .safety-panel { padding: 20px 12px; }
+  .equip-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .equip-card { padding: 16px 12px; }
+}
+</style>
+<link rel="canonical" href="https://appliedscienceresearchorganization.org.np/research.html">
+
+<meta property="og:title" content="ASRO | Research Programs — STEM Education, IoT &amp; Robotics Nepal">
+<meta property="og:description" content="Discover ASRO's STEM research programs in Biratnagar, Nepal. We offer IoT training, robotics workshops, astronomy observation, mobile labs, and hands-on science experiments for students. Join our practical science learning programs.">
+<meta property="og:url" content="https://appliedscienceresearchorganization.org.np/research.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://appliedscienceresearchorganization.org.np/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ASRO | Research Programs — STEM Education, IoT &amp; Robotics Nepal">
+<meta name="twitter:description" content="Discover ASRO's STEM research programs in Biratnagar, Nepal. We offer IoT training, robotics workshops, astronomy observation, mobile labs, and hands-on science experiments for students. Join our practical science learning programs.">
+<meta name="twitter:image" content="https://appliedscienceresearchorganization.org.np/logo.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://appliedscienceresearchorganization.org.np"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Research",
+      "item": "https://appliedscienceresearchorganization.org.np/research.html"
+    }
+  ]
+}
+</script>
+
+<link rel="preload" href="style.css" as="style"></head>
+<body>
+
+<header>
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="ASRO Logo - STEM Research Organization">
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">ASRO</span>
+      <span class="nav-logo-tagline">Experience Science Beyond Theory</span>
+    </div>
+  </a>
+  
+  
+  
+  
+  
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="research.html" class="active">Programs</a>
+      <ul class="dropdown-menu">
+        <li><a href="stem-education-nepal.html" style="color:var(--navy); padding:8px;">STEM Education</a></li>
+        <li><a href="robotics-for-students.html" style="color:var(--navy); padding:8px;">Robotics</a></li>
+        <li><a href="iot-training.html" style="color:var(--navy); padding:8px;">IoT Training</a></li>
+        <li><a href="astronomy-programs.html" style="color:var(--navy); padding:8px;">Astronomy</a></li>
+        <li><a href="events.html" style="color:var(--navy); padding:8px;">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">More <span class="material-symbols-outlined chevron-icon">keyboard_arrow_down</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="projects.html" style="color:var(--navy); padding:8px;">Projects</a></li>
+        <li><a href="gallery.html" style="color:var(--navy); padding:8px;">Gallery</a></li>
+        <li><a href="membership.html" style="color:var(--navy); padding:8px;">Membership</a></li>
+        <li><a href="donate.html" style="color:var(--navy); padding:8px;">Donate</a></li>
+      </ul>
+    </li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+
+
+
+
+
+  <div class="hamburger" aria-label="Toggle Navigation" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+</header>
+
+<main>
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb">Home / <span>Research</span></div>
+    <h1>Research &amp; <span>Programs</span></h1>
+    <p>From mobile labs to VR classrooms — our STEM programs make science tangible and accessible through IoT training, robotics workshops, and astronomy observation for students in Biratnagar.</p>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="research-intro-grid">
+    <div class="reveal">
+      <div class="tag">Our Approach</div>
+      <h2 class="section-title">Science That You Can <span>Touch &amp; Feel</span></h2>
+      <div class="divider"></div>
+      <p style="color:var(--muted);margin-top:20px;font-size:16px;line-height:1.9;">
+        At ASRO, we believe that the most powerful way to learn science is through direct experience. Our STEM education programs are designed to take students beyond textbooks into hands-on laboratory environments with real telescopes, microscopes, IoT kits, and robotics equipment.
+      </p>
+      <p style="color:var(--muted);margin-top:16px;font-size:16px;line-height:1.9;">
+        Every program is supervised by trained ASRO members and follows strict safety protocols. We work closely with schools, parents, and Ward No. 4 to deliver accessible, affordable, and impactful science education across Nepal.
+      </p>
+    </div>
+    <div class="reveal" data-delay="150">
+      <div class="info-box" style="margin-bottom:16px;">
+        <h4>🚐 Mobile Lab Fee</h4>
+        <p>Just <strong>Rs.125+ Per Student, Mobile Lab</strong> — our mobile lab visits your school and delivers hands-on STEM experiments including IoT training, robotics workshops, and astronomy observation.</p>
+      </div>
+      <div class="info-box">
+        <h4>🛡️ Safety First</h4>
+        <p>All experiments are conducted under ASRO member supervision with mandatory PPE — gloves and goggles for chemical experiments. Student safety is always our top priority.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header">
+    <div class="tag">Core Programs</div>
+    <h2 class="section-title">STEM Research &amp; <span>Education</span></h2>
+    <div class="divider"></div>
+    <p class="section-sub" style="margin-top:20px;">Our hands-on science programs cover IoT training, robotics education, astronomy workshops, and practical STEM learning for Nepali students.</p>
+  </div>
+  <div class="research-programs">
+    <div class="prog-card reveal">
+      <div class="prog-card-header">
+        <div class="prog-num">01</div>
+        <div><h3>Instrument Training</h3><p>Telescopes · Microscopes · Lab Tools</p></div>
+      </div>
+      <div class="prog-card-body">
+        <p>Students learn to calibrate, operate, and record findings using professional scientific instruments. Sessions cover proper handling, safety, and data recording techniques for real scientific practice.</p>
+        <div class="prog-tags"><span class="prog-tag">STEM Education</span><span class="prog-tag">Hands-on</span></div>
+      </div>
+    </div>
+    <div class="prog-card reveal" data-delay="100">
+      <div class="prog-card-header">
+        <div class="prog-num">02</div>
+        <div><h3>Mobile Laboratory</h3><p>School Visits · Rs.125+ Per Student, Mobile Lab</p></div>
+      </div>
+      <div class="prog-card-body">
+        <p>Our flagship outreach program brings STEM education directly to schools across Biratnagar. Students conduct experiments in their own familiar environment with all equipment provided by ASRO.</p>
+        <div class="prog-tags"><span class="prog-tag">Community Science</span><span class="prog-tag">Affordable</span></div>
+      </div>
+    </div>
+    <div class="prog-card reveal" data-delay="200">
+      <div class="prog-card-header">
+        <div class="prog-num">03</div>
+        <div><h3>Astronomy &amp; Space Science</h3><p>Telescopes · Sky Watching · Workshops</p></div>
+      </div>
+      <div class="prog-card-body">
+        <p>Telescope observation nights, planetary workshops, and sky-watching events designed to cultivate a deep curiosity about astronomy, physics, and space exploration in young Nepali students.</p>
+        <div class="prog-tags"><span class="prog-tag">Astronomy Nepal</span><span class="prog-tag">Space Science</span></div>
+      </div>
+    </div>
+    <div class="prog-card reveal" data-delay="300">
+      <div class="prog-card-header">
+        <div class="prog-num">04</div>
+        <div><h3>Biology &amp; Life Sciences</h3><p>Microscopy · Specimens · Cell Biology</p></div>
+      </div>
+      <div class="prog-card-body">
+        <p>Hands-on microscopy sessions, permanent slide examination, and biological experiment demonstrations that bring the microscopic world to life for curious young scientists.</p>
+        <div class="prog-tags"><span class="prog-tag">Science Training</span><span class="prog-tag">Student Research</span></div>
+      </div>
+    </div>
+    <div class="prog-card reveal" data-delay="400">
+      <div class="prog-card-header">
+        <div class="prog-num">05</div>
+        <div><h3>Chemical Sciences</h3><p>Reactions · Safety · Analysis</p></div>
+      </div>
+      <div class="prog-card-body">
+        <p>Supervised chemical reaction experiments with full safety protocols. Students learn safe laboratory practices alongside core chemistry concepts — gloves and goggles mandatory at all times.</p>
+        <div class="prog-tags"><span class="prog-tag">Science Experiments</span><span class="prog-tag">Practical Learning</span></div>
+      </div>
+    </div>
+    <div class="prog-card reveal" data-delay="500">
+      <div class="prog-card-header">
+        <div class="prog-num">06</div>
+        <div><h3>IoT &amp; Automation</h3><p>Smart Sensors · Connected Devices · Arduino</p></div>
+      </div>
+      <div class="prog-card-body">
+        <p>IoT training with smart sensors, ESP32 projects, and automation modules. Students build connected devices and learn how technology and innovation shape the modern world.</p>
+        <div class="prog-tags"><span class="prog-tag">IoT Training Nepal</span><span class="prog-tag">Innovation</span></div>
+      </div>
+    </div>
+    <div class="prog-card reveal" data-delay="600">
+      <div class="prog-card-header">
+        <div class="prog-num">07</div>
+        <div><h3>STEM Robotics</h3><p>Robot Building · Arduino Robotics · Projects</p></div>
+      </div>
+      <div class="prog-card-body">
+        <p>Robotics education with Arduino, robot building workshops, and student robotics projects. Hands-on robotics training that prepares students for future technology careers.</p>
+        <div class="prog-tags"><span class="prog-tag">Robotics Nepal</span><span class="prog-tag">STEM Learning</span></div>
+      </div>
+    </div>
+    <div class="prog-card reveal" data-delay="700">
+      <div class="prog-card-header">
+        <div class="prog-num">08</div>
+        <div><h3>VR-Enhanced Learning</h3><p>Virtual Reality · Immersive Science</p></div>
+      </div>
+      <div class="prog-card-body">
+        <p>Immersive virtual reality experiences for topics difficult to visualize — from atomic structure to planetary orbits. All content is curated and controlled by ASRO's Secretary and Law Administrator.</p>
+        <div class="prog-tags"><span class="prog-tag">Technology Education</span><span class="prog-tag">VR</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section class="section section-alt">
+  <div class="section-header centered">
+    <div class="tag">Lab Equipment</div>
+    <h2 class="section-title">Our Scientific <span>Instruments</span></h2>
+    <div class="divider centered"></div>
+    <p class="section-sub" style="margin-top:20px;">ASRO's laboratory is equipped with modern STEM instruments for hands-on experiments, robotics training, IoT education, and astronomy programs across Nepal.</p>
+  </div>
+  <div class="equip-grid">
+    <div class="equip-card reveal">
+      <div class="icon">🔬</div>
+      <h4>Microscope</h4>
+      <p>For cell biology and specimen examination sessions</p>
+    </div>
+    <div class="equip-card reveal" data-delay="80">
+      <div class="icon">🔭</div>
+      <h4>Telescope</h4>
+      <p>For astronomy observation and sky-watching events</p>
+    </div>
+    <div class="equip-card reveal" data-delay="160">
+      <div class="icon">⚗️</div>
+      <h4>Chemicals</h4>
+      <p>For supervised chemical reaction experiments</p>
+    </div>
+    <div class="equip-card reveal" data-delay="240">
+      <div class="icon">📽️</div>
+      <h4>Projector</h4>
+      <p>For classroom presentations and visual demonstrations</p>
+    </div>
+    <div class="equip-card reveal" data-delay="320">
+      <div class="icon">🥽</div>
+      <h4>VR Headset</h4>
+      <p>For immersive educational virtual reality experiences</p>
+    </div>
+    <div class="equip-card reveal" data-delay="400">
+      <div class="icon">⚖️</div>
+      <h4>Spring Balance</h4>
+      <p>For physics experiments and measurement activities</p>
+    </div>
+    <div class="equip-card reveal" data-delay="480">
+      <div class="icon">🧫</div>
+      <h4>Permanent Slide</h4>
+      <p>Pre-prepared biological specimens for microscopy</p>
+    </div>
+    <div class="equip-card reveal" data-delay="560">
+      <div class="icon">🤖</div>
+      <h4>IoT Kit</h4>
+      <p>Smart sensors, microcontrollers, and automation modules for hands-on STEM learning</p>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<section class="section">
+  <div class="safety-panel reveal">
+    <div>
+      <div class="tag" style="color:var(--green-light);"><span style="background:var(--green-light);"></span>Safety First</div>
+      <h2>Lab Safety <span>Protocols</span></h2>
+      <p style="margin-top:16px;">The safety of every student is ASRO's highest priority. All experiments follow strict protocols developed by our Law Administrator and team.</p>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:28px;">Partner With Us →</a>
+    </div>
+    <div class="safety-rules">
+      <div class="safety-rule">
+        <div class="safety-rule-icon">🧤</div>
+        <div><h4>Mandatory PPE</h4><p>Gloves and goggles are required for ALL chemical experiments — no exceptions.</p></div>
+      </div>
+      <div class="safety-rule">
+        <div class="safety-rule-icon">👨‍🔬</div>
+        <div><h4>ASRO Supervision</h4><p>No chemicals or equipment may be used without an ASRO member present and supervising.</p></div>
+      </div>
+      <div class="safety-rule">
+        <div class="safety-rule-icon">📱</div>
+        <div><h4>Content Control</h4><p>VR content is strictly educational and managed by the Secretary and Law Administrator.</p></div>
+      </div>
+      <div class="safety-rule">
+        <div class="safety-rule-icon">🛡️</div>
+        <div><h4>Equipment Insurance</h4><p>Accidental damage to expensive items is covered by ASRO's organizational fund — not charged to students.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <img src="logo.png" alt="ASRO Nepal - STEM Research Organization" style="height:48px;">
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">ASRO</span>
+          <span class="nav-logo-tagline">Experience Science Beyond Theory</span>
+        </div>
+      </div>
+      <p>Applied Science &amp; Research Organization — Ward No. 4, Biratnagar Metropolitan City, Nepal. STEM Education, Robotics, IoT Training, Astronomy Programs.</p>
+    </div>
+    <div class="footer-col"><h5>Our Programs</h5>
+      <ul>
+        <li><a href="stem-education-nepal.html">STEM Education in Nepal</a></li>
+        <li><a href="robotics-for-students.html">Robotics for Students</a></li>
+        <li><a href="iot-training.html">IoT Training</a></li>
+        <li><a href="science-experiments.html">Science Experiments</a></li>
+        <li><a href="astronomy-programs.html">Astronomy Programs</a></li>
+        <li><a href="student-research.html">Student Research</a></li>
+      </ul>
+    </div>
+    <div class="footer-col"><h5>Latest Articles</h5>
+      <ul>
+        <li><a href="10-easy-science-experiments.html">10 Easy Science Experiments</a></li>
+        <li><a href="what-is-iot.html">What is IoT?</a></li>
+        <li><a href="benefits-of-stem-education.html">Benefits of STEM Education</a></li>
+      </ul>
+    </div>
+    <div class="footer-col"><h5>Contact</h5><ul><li><a href="#">Ward No. 4, Biratnagar</a></li><li><a href="mailto:info@appliedscienceresearchorganization.org.np">info@appliedscienceresearchorganization.org.np</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 ASRO — Applied Science &amp; Research Organization. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

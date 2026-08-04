@@ -1,0 +1,415 @@
+<!DOCTYPE html><html lang="en"><head>
+  <!-- Google Analytics 4 (GA4) - ASRO Nepal -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ASRONEPAL123"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ASRONEPAL123');
+  </script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore ASRO's publications, field reports, and insights on STEM education in Biratnagar, Nepal. Read about our robotics, IoT training, astronomy workshops, and hands-on science programs for students.">
+<meta name="author" content="ASRO - Applied Science &amp; Research Organization">
+<meta name="robots" content="index, follow">
+
+
+
+
+
+
+
+
+
+
+
+
+<title>ASRO | Publications — STEM Research &amp; Science Innovation Nepal</title>
+=======
+<meta name="keywords" content="ASRO publications Biratnagar, Science Education Nepal publications, STEM Education Nepal research, Research Organization Nepal publications, IoT Training Nepal reports, Robotics Nepal case studies, Astronomy Workshop Nepal findings, Science Workshops Nepal insights, Student Research Projects Nepal, Research Publication Nepal, Scientific Research Projects, Applied Research Nepal, Innovation Research Nepal, STEM Research Nepal, Academic Research Nepal, Science Articles Nepal, Field Reports Biratnagar, Mobile Lab Reports Nepal, VR Education Nepal studies, Chemical Safety Nepal handbook, Telescope Observation Nepal events, Science Innovation Programs for Youth, Student Research Opportunities in Nepal, Practical Science Learning for Students, Hands-on STEM Programs in Nepal, Robotics and IoT Training in Nepal, Science Research Organization in Biratnagar, Technology and Innovation Education Nepal, Research Publication Biratnagar">
+<meta name="author" content="ASRO - Applied Science & Research Organization">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Publications — ASRO | STEM Research & Science Innovation Nepal">
+<meta property="og:description" content="Read ASRO's research publications, field reports, and insights on STEM education, IoT training, robotics workshops, and astronomy programs in Biratnagar, Nepal.">
+<meta property="og:image" content="https://asro-website.com/logo.png">
+<meta property="og:url" content="https://asro-website.com/publications.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ASRO Nepal">
+<meta property="og:locale" content="en_NP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Publications — ASRO | STEM Research & Science Innovation Nepal">
+<meta name="twitter:description" content="Read ASRO's research publications, field reports, and insights on STEM education, IoT training, robotics workshops, and astronomy programs in Biratnagar, Nepal.">
+<meta name="twitter:image" content="https://asro-website.com/logo.png">
+<link rel="canonical" href="https://asro-website.com/publications.html">
+<title>Publications — ASRO | STEM Research &amp; Science Innovation Nepal</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="style.css">
+<style>
+.filter-row {
+  display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 40px;
+}
+.filter-btn {
+  font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 13px;
+  padding: 8px 20px; border-radius: 100px; border: 2px solid var(--gray-200);
+  background: white; color: var(--navy); cursor: pointer; transition: .22s;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: var(--navy); color: white; border-color: var(--navy);
+}
+
+.pub-list { display: flex; flex-direction: column; gap: 20px; }
+.pub-item {
+  background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-md);
+  padding: 28px 32px; display: flex; align-items: flex-start; gap: 24px;
+  box-shadow: var(--shadow-sm); transition: .28s; cursor: pointer;
+}
+.pub-item:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: transparent; border-left: 4px solid var(--green); }
+.pub-year {
+  font-family: 'Raleway', sans-serif; font-weight: 900; font-size: 13px;
+  color: var(--green); background: var(--green-pale);
+  padding: 6px 14px; border-radius: var(--radius-sm); white-space: nowrap;
+  border: 1px solid rgba(90,158,58,0.2);
+}
+.pub-content { flex: 1; }
+.pub-content h3 { font-family: 'Raleway', sans-serif; font-weight: 800; font-size: 17px; color: var(--navy-dark); margin-bottom: 8px; }
+.pub-content p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.pub-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.pub-tag {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 3px 10px; border-radius: 100px;
+  background: var(--green-pale); color: var(--green); border: 1px solid rgba(90,158,58,0.2);
+}
+.pub-tag.navy { background: var(--gray-100); color: var(--navy); border-color: var(--gray-200); }
+.pub-arrow {
+  font-size: 20px; color: var(--gray-400); flex-shrink: 0; margin-top: 2px;
+  transition: .22s;
+}
+.pub-item:hover .pub-arrow { color: var(--green); transform: translateX(4px); }
+
+.featured-pub {
+  background: linear-gradient(135deg, var(--navy-dark), var(--navy-mid));
+  border-radius: var(--radius-lg); padding: 48px; margin-bottom: 56px;
+  display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center;
+  position: relative; overflow: hidden;
+}
+.featured-pub::before {
+  content: 'FEATURED'; position: absolute; top: 20px; right: 20px;
+  font-family: 'Raleway', sans-serif; font-weight: 900; font-size: 10px;
+  letter-spacing: 0.2em; color: var(--green-light);
+  background: rgba(90,158,58,0.15); padding: 4px 12px; border-radius: 100px;
+  border: 1px solid rgba(90,158,58,0.3);
+}
+.featured-pub h2 { font-size: 26px; font-weight: 900; color: white; margin-bottom: 14px; }
+.featured-pub p { color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.8; margin-bottom: 24px; }
+.featured-pub .pub-tag { background: rgba(90,158,58,0.2); color: var(--green-light); border-color: rgba(90,158,58,0.3); }
+.featured-logo { width: 140px; opacity: 0.35; filter: brightness(0) invert(1); }
+
+/* Blog articles */
+.articles-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px;
+  margin-top: 48px;
+}
+.article-card {
+  background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-md);
+  overflow: hidden; box-shadow: var(--shadow-sm); transition: .28s;
+}
+.article-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.article-thumb {
+  height: 180px; position: relative; overflow: hidden; display: grid; place-items: center;
+}
+.article-thumb-cat {
+  position: absolute; top: 14px; left: 14px;
+  background: var(--green); color: white; font-size: 11px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 100px;
+}
+.article-body { padding: 22px; }
+.article-meta { font-size: 12px; color: var(--muted); margin-bottom: 10px; display: flex; gap: 8px; }
+.article-card h3 { font-family: 'Raleway', sans-serif; font-weight: 800; font-size: 16px; color: var(--navy-dark); margin-bottom: 10px; line-height: 1.4; }
+.article-card p { color: var(--muted); font-size: 13px; }
+.read-more { display: inline-flex; align-items: center; gap: 6px; color: var(--green); font-weight: 700; font-size: 13px; margin-top: 14px; transition: gap .2s; }
+.article-card:hover .read-more { gap: 10px; }
+
+@media (max-width: 640px) {
+  .featured-pub { grid-template-columns: 1fr; }
+  .featured-logo { display: none; }
+  .pub-item { flex-direction: column; }
+}
+</style>
+<link rel="canonical" href="https://appliedscienceresearchorganization.org.np/publications.html">
+
+<meta property="og:title" content="ASRO | Publications — STEM Research &amp; Science Innovation Nepal">
+<meta property="og:description" content="Explore ASRO's publications, field reports, and insights on STEM education in Biratnagar, Nepal. Read about our robotics, IoT training, astronomy workshops, and hands-on science programs for students.">
+<meta property="og:url" content="https://appliedscienceresearchorganization.org.np/publications.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://appliedscienceresearchorganization.org.np/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ASRO | Publications — STEM Research &amp; Science Innovation Nepal">
+<meta name="twitter:description" content="Explore ASRO's publications, field reports, and insights on STEM education in Biratnagar, Nepal. Read about our robotics, IoT training, astronomy workshops, and hands-on science programs for students.">
+<meta name="twitter:image" content="https://appliedscienceresearchorganization.org.np/logo.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://appliedscienceresearchorganization.org.np"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Publications",
+      "item": "https://appliedscienceresearchorganization.org.np/publications.html"
+    }
+  ]
+}
+</script>
+
+<link rel="preload" href="style.css" as="style"></head>
+<body>
+
+<header>
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="ASRO Logo">
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">ASRO</span>
+      <span class="nav-logo-tagline">Experience Science Beyond Theory</span>
+    </div>
+  </a>
+  
+  
+  
+  
+  
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+      <a href="research.html">Programs <span class="material-symbols-outlined chevron-icon">keyboard_arrow_down</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="stem-education-nepal.html" style="color:var(--navy); padding:8px;">STEM Education</a></li>
+        <li><a href="robotics-for-students.html" style="color:var(--navy); padding:8px;">Robotics</a></li>
+        <li><a href="iot-training.html" style="color:var(--navy); padding:8px;">IoT Training</a></li>
+        <li><a href="astronomy-programs.html" style="color:var(--navy); padding:8px;">Astronomy</a></li>
+        <li><a href="events.html" style="color:var(--navy); padding:8px;">Events</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#">More <span class="material-symbols-outlined chevron-icon">keyboard_arrow_down</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="projects.html" style="color:var(--navy); padding:8px;">Projects</a></li>
+        <li><a href="gallery.html" style="color:var(--navy); padding:8px;">Gallery</a></li>
+        <li><a href="membership.html" style="color:var(--navy); padding:8px;">Membership</a></li>
+        <li><a href="donate.html" style="color:var(--navy); padding:8px;">Donate</a></li>
+      </ul>
+    </li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+
+
+
+
+
+  <div class="hamburger" aria-label="Toggle Navigation" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+</header>
+
+<main>
+<div class="page-hero">
+  <div class="page-hero-content">
+    <div class="breadcrumb">Home / <span>Publications</span></div>
+    <h1>Publications &amp; <span>Reports</span></h1>
+    <p>Concept papers, field reports, activity summaries, and science articles produced by the ASRO team on STEM education, IoT training, robotics workshops, and astronomy programs.</p>
+  </div>
+</div>
+
+<section class="section">
+  <!-- Featured -->
+  <div class="featured-pub reveal">
+    <div>
+      <div class="tag" style="color:var(--green-light);margin-bottom:12px;"><span style="background:var(--green-light)"></span>Official Document</div>
+      <h2>संस्थागत अवधारणा तथा कार्यक्रम प्रस्ताव</h2>
+      <p>The foundational concept paper of ASRO — outlining our mission, internal Niyamawali, team structure, expectations from Ward No. 4, and the full equipment list for our mobile lab program. Signed by both the Law Administrator and Chairperson.</p>
+      <div class="pub-tags" style="margin-bottom:24px;">
+        <span class="pub-tag">Concept Paper</span>
+        <span class="pub-tag">Governance</span>
+        <span class="pub-tag">2026</span>
+      </div>
+      <a href="about.html#niyamawali" class="btn btn-primary">View Details →</a>
+    </div>
+    <img src="logo.png" alt="ASRO Publications - STEM Research Organization" class="featured-logo">
+  </div>
+
+  <!-- Filter -->
+  <div class="filter-row">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Field Reports</button>
+    <button class="filter-btn">Policy</button>
+    <button class="filter-btn">Science Articles</button>
+    <button class="filter-btn">Event Reports</button>
+  </div>
+
+  <!-- Pub list -->
+  <div class="pub-list">
+    <div class="pub-item reveal">
+      <div class="pub-year">2026</div>
+      <div class="pub-content">
+        <h3>संस्थागत अवधारणा तथा कार्यक्रम प्रस्ताव (Institutional Concept &amp; Program Proposal)</h3>
+        <p>ASRO's official founding document. Covers the organization's mission, Niyamawali (internal rules), team hierarchy, ward expectations, and the list of scientific equipment required for the mobile lab program. Signed by Law Administrator Sandesh Rana and Chairperson Jeevan Sharma.</p>
+        <div class="pub-tags">
+          <span class="pub-tag">Concept Paper</span><span class="pub-tag">Governance</span>
+          <span class="pub-tag navy">Official</span>
+        </div>
+      </div>
+      <div class="pub-arrow">→</div>
+    </div>
+    <div class="pub-item reveal" data-delay="80">
+      <div class="pub-year">2026</div>
+      <div class="pub-content">
+        <h3>Mobile Lab Field Report — Schools of Ward No. 4, Biratnagar</h3>
+        <p>A comprehensive field report from ASRO's first series of mobile laboratory visits to primary and secondary schools in Biratnagar. Includes student participation counts, experiments conducted, teacher feedback, and recommendations for future sessions.</p>
+        <div class="pub-tags">
+          <span class="pub-tag">Field Report</span><span class="pub-tag">Mobile Lab</span>
+          <span class="pub-tag">Student Outreach</span>
+        </div>
+      </div>
+      <div class="pub-arrow">→</div>
+    </div>
+    <div class="pub-item reveal" data-delay="160">
+      <div class="pub-year">2026</div>
+      <div class="pub-content">
+        <h3>VR in Science Education: Content Policy &amp; Digital Safety Guidelines</h3>
+        <p>ASRO's internal policy document governing the use of virtual reality headsets in educational settings. Covers content curation standards, parental consent procedures, equipment care protocols, and the roles of Secretary Prakash Thakur and Law Administrator Sandesh Rana in content oversight.</p>
+        <div class="pub-tags">
+          <span class="pub-tag">Policy</span><span class="pub-tag">VR Education</span>
+          <span class="pub-tag">Digital Safety</span>
+        </div>
+      </div>
+      <div class="pub-arrow">→</div>
+    </div>
+    <div class="pub-item reveal" data-delay="240">
+      <div class="pub-year">2026</div>
+      <div class="pub-content">
+        <h3>Laboratory Safety Handbook: Chemical Experiments for Student Scientists</h3>
+        <p>A student-facing safety handbook prepared by the ASRO team covering proper use of personal protective equipment (gloves, goggles), chemical handling procedures, experiment setup guidelines, and emergency protocols for all lab sessions.</p>
+        <div class="pub-tags">
+          <span class="pub-tag">Safety</span><span class="pub-tag">Handbook</span>
+          <span class="pub-tag">Chemical Science</span>
+        </div>
+      </div>
+      <div class="pub-arrow">→</div>
+    </div>
+    <div class="pub-item reveal" data-delay="320">
+      <div class="pub-year">2025</div>
+      <div class="pub-content">
+        <h3>Astronomy Awareness Night — Event Summary Report</h3>
+        <p>Report from ASRO's first public telescope observation night held for school students and community members in Biratnagar Ward No. 4. Includes attendance data, activities conducted, and student feedback on their experience with the organization's telescope.</p>
+        <div class="pub-tags">
+          <span class="pub-tag">Astronomy</span><span class="pub-tag">Event Report</span>
+          <span class="pub-tag">Outreach</span>
+        </div>
+      </div>
+      <div class="pub-arrow">→</div>
+    </div>
+    <div class="pub-item reveal" data-delay="400">
+      <div class="pub-year">2025</div>
+      <div class="pub-content">
+        <h3>Young Scientists of Nepal: Pathways into Science Research and Careers</h3>
+        <p>An educational article by the ASRO team exploring career pathways and skills for the next generation of Nepali scientists — covering university options, research opportunities, and how community science programs like ASRO can accelerate early-stage scientific development.</p>
+        <div class="pub-tags">
+          <span class="pub-tag">Science Article</span><span class="pub-tag">Education</span>
+          <span class="pub-tag">Career</span>
+        </div>
+      </div>
+      <div class="pub-arrow">→</div>
+    </div>
+  </div>
+</section>
+
+<!-- Articles Section -->
+<section class="section section-alt">
+  <div class="section-header centered">
+    <div class="tag">Blog &amp; Articles</div>
+    <h2 class="section-title">Latest from the <span>ASRO Team</span></h2>
+    <div class="divider centered"></div>
+    <p class="section-sub" style="margin-top:20px;">STEM insights, IoT training updates, robotics workshops, and astronomy program reports from Biratnagar.</p>
+  </div>
+  <div class="articles-grid">
+    <div class="article-card reveal">
+      <div class="article-thumb" style="background:linear-gradient(135deg,var(--navy-dark),var(--navy-mid))">
+        <img src="logo.png" alt="ASRO" style="width:80px;opacity:0.3;filter:brightness(0) invert(1);">
+        <span class="article-thumb-cat">Field Report</span>
+      </div>
+      <div class="article-body">
+        <div class="article-meta"><span>Apr 2026</span><span>·</span><span>5 min read</span></div>
+        <h3>Mobile Lab Reaches 5 Schools — 300+ Students Impacted</h3>
+        <p>Our mobile lab completed its first major school tour across Ward No. 4 this April.</p>
+        <span class="read-more">Read More →</span>
+      </div>
+    </div>
+    <div class="article-card reveal" data-delay="100">
+      <div class="article-thumb" style="background:linear-gradient(135deg,var(--navy-dark),#1a5c3a)">
+        <img src="logo.png" alt="ASRO" style="width:80px;opacity:0.3;filter:brightness(0) invert(1);">
+        <span class="article-thumb-cat">Technology</span>
+      </div>
+      <div class="article-body">
+        <div class="article-meta"><span>Mar 2026</span><span>·</span><span>4 min read</span></div>
+        <h3>How ASRO Ensures Safe and Educational VR Experiences</h3>
+        <p>A behind-the-scenes look at our content policies and VR program management.</p>
+        <span class="read-more">Read More →</span>
+      </div>
+    </div>
+    <div class="article-card reveal" data-delay="200">
+      <div class="article-thumb" style="background:linear-gradient(135deg,#0f4a2a,var(--navy-dark))">
+        <img src="logo.png" alt="ASRO" style="width:80px;opacity:0.3;filter:brightness(0) invert(1);">
+        <span class="article-thumb-cat">Astronomy</span>
+      </div>
+      <div class="article-body">
+        <div class="article-meta"><span>Feb 2026</span><span>·</span><span>6 min read</span></div>
+        <h3>Telescope Night: When Ward No. 4 Looked Up at the Stars</h3>
+        <p>Recapping our first community astronomy event and what we learned from it.</p>
+        <span class="read-more">Read More →</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <img src="logo.png" alt="ASRO Nepal - STEM Research Organization" style="height:48px;">
+        <div class="nav-logo-text"><span class="nav-logo-name">ASRO</span><span class="nav-logo-tagline">Experience Science Beyond Theory</span></div>
+      </div>
+      <p>Applied Science &amp; Research Organization — Ward No. 4, Biratnagar Metropolitan City, Nepal. STEM Education, Robotics, IoT Training, Astronomy Programs.</p>
+    </div>
+    <div class="footer-col"><h5>Pages</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h5>Publications</h5><ul><li><a href="#">Concept Paper</a></li><li><a href="#">Field Reports</a></li><li><a href="#">Policy Documents</a></li><li><a href="#">Blog Articles</a></li></ul></div>
+    <div class="footer-col"><h5>Contact</h5><ul><li><a href="#">Ward No. 4, Biratnagar</a></li><li><a href="mailto:info@appliedscienceresearchorganization.org.np">info@appliedscienceresearchorganization.org.np</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 ASRO — Applied Science &amp; Research Organization. All rights reserved.</p>
+    <div class="footer-bottom-links"><a href="contact.html">Contact</a><a href="team.html">Team</a></div>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script>
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>

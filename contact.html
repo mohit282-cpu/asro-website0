@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics 4 (GA4) - ASRO Nepal -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ASRONEPAL123"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ASRONEPAL123');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact ASRO (Applied Science &amp; Research Organization) in Biratnagar, Nepal for school partnerships, volunteering, donations, mobile lab programs, IoT training, robotics workshops, and astronomy programs.">
+  <meta name="author" content="ASRO - Applied Science &amp; Research Organization">
+  <meta name="robots" content="index, follow">
+
+  <title>Contact ASRO | STEM Education &amp; Research Partnership Inquiry</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 64px;
+      align-items: flex-start;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      transition: .25s;
+      border-left: 4px solid var(--green);
+    }
+
+    .contact-card:hover {
+      transform: translateX(4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .contact-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .contact-card h4 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--green);
+      margin-bottom: 6px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .contact-card strong {
+      color: var(--navy-dark);
+    }
+
+    .map-placeholder {
+      border-radius: var(--radius-md);
+      height: 260px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    /* FORM */
+    .contact-form-wrap {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .form-header {
+      margin-bottom: 36px;
+    }
+
+    .form-header h2 {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--navy-dark);
+      margin-bottom: 8px;
+    }
+
+    .form-header h2 span {
+      color: var(--green);
+    }
+
+    .form-header p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group label {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: var(--off-white);
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-sm);
+      padding: 13px 16px;
+      color: var(--text);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 15px;
+      transition: .22s;
+      outline: none;
+      resize: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--green);
+      background: white;
+      box-shadow: 0 0 0 4px rgba(90, 158, 58, 0.1);
+    }
+
+    .form-group textarea {
+      height: 140px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 15px;
+      background: var(--green);
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      transition: .25s;
+      box-shadow: 0 6px 20px rgba(90, 158, 58, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .submit-btn:hover {
+      background: var(--green-light);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(90, 158, 58, 0.45);
+    }
+
+    .success-banner {
+      display: none;
+      background: var(--green-pale);
+      border: 1px solid rgba(90, 158, 58, 0.3);
+      border-radius: var(--radius-sm);
+      padding: 16px 20px;
+      color: var(--green);
+      font-weight: 600;
+      font-size: 15px;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Collab chips */
+    .collab-section {
+      margin-top: 28px;
+      padding: 22px;
+      background: var(--off-white);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-md);
+    }
+
+    .collab-section h4 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 14px;
+      color: var(--navy-dark);
+      margin-bottom: 14px;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 100px;
+      background: white;
+      border: 1.5px solid var(--gray-200);
+      color: var(--navy);
+      transition: .2s;
+    }
+
+    .chip:hover {
+      border-color: var(--green);
+      color: var(--green);
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 48px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--gray-200);
+      overflow: hidden;
+    }
+
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      padding: 20px 0;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--navy-dark);
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: color .2s;
+    }
+
+    .faq-q:hover {
+      color: var(--green);
+    }
+
+    .faq-q .arrow {
+      transition: transform .3s;
+      flex-shrink: 0;
+      color: var(--green);
+    }
+
+    .faq-item.open .faq-q .arrow {
+      transform: rotate(180deg);
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .3s ease;
+    }
+
+    .faq-a p {
+      padding: 0 0 20px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 200px;
+    }
+
+    @media (max-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form-wrap {
+        padding: 28px;
+      }
+    }
+  </style>
+  <link rel="canonical" href="https://appliedscienceresearchorganization.org.np/contact.html">
+</head>
+
+<body>
+  <header>
+    <nav id="mainNav">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="ASRO Logo - STEM Education Nepal">
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">ASRO</span>
+          <span class="nav-logo-tagline">Experience Science Beyond Theory</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="research.html">Programs</a>
+          <ul class="dropdown-menu">
+            <li><a href="stem-education-nepal.html" style="color:var(--navy); padding:8px;">STEM Education</a></li>
+            <li><a href="robotics-for-students.html" style="color:var(--navy); padding:8px;">Robotics</a></li>
+            <li><a href="iot-training.html" style="color:var(--navy); padding:8px;">IoT Training</a></li>
+            <li><a href="astronomy-programs.html" style="color:var(--navy); padding:8px;">Astronomy</a></li>
+            <li><a href="events.html" style="color:var(--navy); padding:8px;">Events</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">More</a>
+          <ul class="dropdown-menu">
+            <li><a href="projects.html" style="color:var(--navy); padding:8px;">Projects</a></li>
+            <li><a href="gallery.html" style="color:var(--navy); padding:8px;">Gallery</a></li>
+            <li><a href="membership.html" style="color:var(--navy); padding:8px;">Membership</a></li>
+            <li><a href="donate.html" style="color:var(--navy); padding:8px;">Donate</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html" class="active nav-cta">Contact Us</a></li>
+      </ul>
+
+      <div class="hamburger" aria-label="Toggle Navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <div class="breadcrumb">Home / <span>Contact</span></div>
+        <h1>Get in <span>Touch</span></h1>
+        <p>Contact ASRO for school partnerships, volunteer opportunities, mobile lab programs, IoT training, robotics workshops, and astronomy programs in Biratnagar.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div>
+          <div class="tag">Contact Information</div>
+          <h2 class="section-title" style="font-size:28px;">We're Based in <span>Biratnagar</span></h2>
+          <div class="divider" style="margin-bottom:28px;"></div>
+
+          <div class="contact-info">
+            <div class="contact-card reveal">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p><strong>Ward No. 4, Biratnagar Metropolitan City</strong><br>Morang District, Koshi Province, Nepal</p>
+              </div>
+            </div>
+            <div class="contact-card reveal" data-delay="80">
+              <div class="contact-icon">🏛️</div>
+              <div>
+                <h4>Affiliated Ward Office</h4>
+                <p><strong>Ward Office No. 4</strong><br>Biratnagar Mahanagar Palika</p>
+              </div>
+            </div>
+            <div class="contact-card reveal" data-delay="160">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <p><strong><a href="mailto:info@appliedscienceresearchorganization.org.np">info@appliedscienceresearchorganization.org.np</a></strong><br>
+                <a href="mailto:support@appliedscienceresearchorganization.org.np">support@appliedscienceresearchorganization.org.np</a></p>
+              </div>
+            </div>
+            <div class="contact-card reveal" data-delay="240">
+              <div class="contact-icon">👥</div>
+              <div>
+                <h4>Organization</h4>
+                <p>9 Core Members · 14+ Technical Team<br>Non-profit voluntary STEM education organization</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-placeholder reveal" data-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.058936635362!2d87.26760316250673!3d26.4860471693577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef75a625776e65%3A0xd57487b272fab1ca!2sASRO%20Nepal!5e0!3m2!1sen!2snp!4v1781365427494!5m2!1sen!2snp" width="100%" height="260" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="collab-section reveal" data-delay="350">
+            <h4>We Collaborate With</h4>
+            <div class="chip-row">
+              <span class="chip">Schools &amp; Colleges</span>
+              <span class="chip">NGOs</span>
+              <span class="chip">Government Bodies</span>
+              <span class="chip">Science Communities</span>
+              <span class="chip">Donors &amp; Sponsors</span>
+              <span class="chip">Volunteer Educators</span>
+              <span class="chip">Media &amp; Press</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form-wrap reveal" data-delay="100">
+          <div class="form-header">
+            <h2>Send Us a <span>Message</span></h2>
+            <p>Inquiry about STEM programs, partnerships, volunteering, or astronomy events in Biratnagar.</p>
+          </div>
+          <div id="successBanner" class="success-banner">
+            ✅ Thank you! Your message has been sent successfully. We will email you back shortly.
+          </div>
+          <form id="contact-form" class="form-grid">
+            <input type="hidden" name="access_key" value="34acebdf-b780-4e68-a5a3-381755f54e57">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" name="first_name" placeholder="Ramesh" id="fname" required>
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" name="last_name" placeholder="Sharma" id="lname" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="ramesh@example.com" id="email" required>
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" name="phone" placeholder="+977 98XXXXXXXX">
+            </div>
+            <div class="form-group">
+              <label>Organization / School (Optional)</label>
+              <input type="text" name="organization" placeholder="Your school or organization name">
+            </div>
+            <div class="form-group">
+              <label>Inquiry Type</label>
+              <select name="inquiry_type" required>
+                <option value="">Select inquiry type...</option>
+                <option>School Partnership - STEM Programs</option>
+                <option>Mobile Lab Request - IoT Training</option>
+                <option>Robotics Workshop Inquiry</option>
+                <option>Astronomy Program Booking</option>
+                <option>Volunteer / Join ASRO</option>
+                <option>Donation / Sponsorship</option>
+                <option>General Enquiry</option>
+                <option>Media / Press</option>
+                <option>Ward / Government Collaboration</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea name="message" placeholder="Tell us how we can help with your STEM education needs, or how you'd like to collaborate with ASRO..." id="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              Send Message <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt">
+      <div class="section-header centered">
+        <div class="tag">FAQ</div>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <div class="divider centered"></div>
+        <p class="section-sub" style="margin-top:20px;">Answers about our STEM programs, IoT training, robotics workshops, and astronomy education.</p>
+      </div>
+      <div style="max-width:720px;margin:0 auto;">
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">How can my school partner with ASRO? <span class="arrow">▾</span></button>
+            <div class="faq-a">
+              <p>Schools can partner with ASRO for STEM education programs including IoT training, robotics workshops, astronomy observation, and mobile lab visits. Contact us via the form or email to schedule hands-on science learning for your students.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Is ASRO's science education free for students? <span class="arrow">▾</span></button>
+            <div class="faq-a">
+              <p>ASRO's programs are designed to be affordable. Mobile lab sessions cost Rs.125+ Per Student, Mobile Lab. Some community astronomy events and science workshops are completely free. We believe cost should never be a barrier to STEM education.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">How can I volunteer for ASRO's science programs? <span class="arrow">▾</span></button>
+            <div class="faq-a">
+              <p>We welcome passionate individuals who share our mission for STEM education in Nepal. Contact us via the form to join our team as a science educator, robotics mentor, IoT trainer, or astronomy guide.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">Does ASRO accept donations for science education programs? <span class="arrow">▾</span></button>
+            <div class="faq-a">
+              <p>Yes! As a non-profit, ASRO relies on community support to fund equipment, mobile lab operations, robotics kits, and IoT training programs. Please contact us to contribute to hands-on science education for Nepali students.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">What safety measures does ASRO use in experiments? <span class="arrow">▾</span></button>
+            <div class="faq-a">
+              <p>All ASRO experiments follow strict safety protocols. Chemical experiments require mandatory gloves and goggles. IoT training uses safe, low-voltage components. VR content is educational and curated. Robotics workshops have trained supervision. Student safety is our highest priority.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="logo.png" alt="ASRO Nepal - STEM Research Organization" style="height:48px;">
+          <div class="nav-logo-text"><span class="nav-logo-name">ASRO</span><span class="nav-logo-tagline">Experience Science Beyond Theory</span></div>
+        </div>
+        <p>Applied Science &amp; Research Organization — Ward No. 4, Biratnagar Metropolitan City, Nepal. STEM Education, Robotics, IoT Training, Astronomy Programs.</p>
+        <p>info@appliedscienceresearchorganization.org.np</p>
+      </div>
+      <div class="footer-col"><h5>Pages</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Get Involved</h5><ul><li><a href="team.html">Join ASRO</a></li><li><a href="contact.html">Partner With Us</a></li><li><a href="donate.html">Donate</a></li><li><a href="research.html">Mobile Lab Request</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="#">Ward No. 4, Biratnagar</a></li><li><a href="mailto:info@appliedscienceresearchorganization.org.np">info@appliedscienceresearchorganization.org.np</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ASRO — Applied Science &amp; Research Organization. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="about.html">About</a><a href="team.html">Team</a></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    emailjs.init("r2wwPRpoT_YqUZm3T");
+
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    document.getElementById('contact-form').addEventListener('submit', async function(event) {
+      event.preventDefault();
+      
+      const submitBtn = document.getElementById('submitBtn');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = 'Sending...';
+      submitBtn.disabled = true;
+
+      const formData = new FormData(this);
+
+      try {
+        await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+
+        await emailjs.sendForm('service_nmbg9jo', 'template_optpr03', this);
+
+        const banner = document.getElementById('successBanner');
+        if (banner) {
+          banner.style.display = 'flex';
+          banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        document.getElementById('contact-form').reset();
+      } catch (error) {
+        console.log('FAILED...', error);
+        alert('Oops! Something went wrong. Error: ' + JSON.stringify(error));
+      } finally {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

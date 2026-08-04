@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the ASRO team, the dedicated youth leaders of Applied Science &amp; Research Organization in Biratnagar, Nepal. Our STEM education team delivers robotics, IoT training, astronomy workshops, and hands-on science programs.">
+  <meta name="keywords" content="ASRO team Biratnagar Nepal, STEM Education Nepal leadership">
+  <meta name="author" content="ASRO - Applied Science &amp; Research Organization">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Team — ASRO | STEM Education Leaders in Biratnagar, Nepal">
+  <meta property="og:description" content="Meet the dedicated ASRO team delivering STEM education, robotics training, IoT workshops, and astronomy programs in Biratnagar.">
+  <title>Team — ASRO | STEM Education Leaders in Biratnagar, Nepal</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .team-section-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
+      font-size: 20px;
+      color: var(--navy-dark);
+      padding: 16px 24px;
+      background: var(--navy-dark);
+      color: white;
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 56px;
+    }
+
+    .team-section-title:first-of-type {
+      margin-top: 0;
+    }
+
+    .team-section-title .icon {
+      font-size: 22px;
+    }
+
+    .team-section-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--green-light);
+      background: rgba(90, 158, 58, 0.2);
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-left: auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 24px;
+      background: var(--off-white);
+      border: 1px solid var(--gray-200);
+      border-top: 0;
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      margin-bottom: 8px;
+    }
+
+    .team-card {
+      background: white;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--gray-200);
+      padding: 28px 24px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: all .28s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: transparent;
+    }
+
+    .team-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--green);
+      transform: scaleX(0);
+      transition: .3s;
+    }
+
+    .team-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .avatar {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      margin: 0 auto 18px;
+      display: grid;
+      place-items: center;
+      font-family: 'Raleway', sans-serif;
+      font-size: 30px;
+      font-weight: 900;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .avatar::before {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--navy));
+      z-index: -1;
+    }
+
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: white;
+      font-family: 'Raleway', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+    }
+
+    .team-card h3 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 17px;
+      color: var(--navy-dark);
+      margin-bottom: 4px;
+    }
+
+    .team-role {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+
+    .team-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* Leadership spotlight */
+    .leadership-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-bottom: 0;
+    }
+
+    .leader-card {
+      background: white;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--gray-200);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      transition: .28s;
+    }
+
+    .leader-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .leader-card-top {
+      background: linear-gradient(135deg, var(--navy-dark), var(--navy-mid));
+      padding: 36px 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    .leader-card-top::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(90, 158, 58, 0.15) 0%, transparent 70%);
+    }
+
+    .leader-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .leader-avatar .ring {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid var(--green);
+      opacity: 0.6;
+    }
+
+    .leader-avatar .inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-family: 'Raleway', sans-serif;
+      font-size: 34px;
+      font-weight: 900;
+      color: white;
+    }
+
+    .leader-card-top h3 {
+      font-size: 19px;
+      font-weight: 900;
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
+
+    .leader-card-top .role {
+      font-size: 12px;
+      color: var(--green-light);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      margin-top: 4px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .leader-card-body {
+      padding: 24px;
+    }
+
+    .leader-card-body p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* Hierarchy chart */
+    .hierarchy {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      margin-top: 80px;
+    }
+
+    .hier-tree {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+
+    .hier-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      border-radius: var(--radius-sm);
+      transition: .22s;
+      border-left: 4px solid transparent;
+    }
+
+    .hier-row:hover {
+      background: var(--off-white);
+      border-left-color: var(--green);
+    }
+
+    .hier-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .hier-connector {
+      width: 2px;
+      height: 20px;
+      background: var(--gray-200);
+      margin-left: 22px;
+    }
+
+    .hier-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      color: var(--navy-dark);
+      min-width: 260px;
+    }
+
+    .hier-name {
+      font-weight: 600;
+      color: var(--green);
+      font-size: 14px;
+      min-width: 200px;
+    }
+
+    .hier-desc {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 768px) {
+      .leadership-row {
+        grid-template-columns: 1fr;
+      }
+
+      .leader-card-top {
+        padding: 28px 20px;
+      }
+
+      .leader-avatar {
+        width: 80px;
+        height: 80px;
+      }
+
+      .leader-card-top h3 {
+        font-size: 17px;
+      }
+
+      .leader-card-body {
+        padding: 20px;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+        gap: 16px;
+        padding: 16px;
+      }
+
+      .team-card {
+        padding: 22px 18px;
+      }
+
+      .avatar {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 14px;
+      }
+
+      .team-card h3 {
+        font-size: 15px;
+      }
+
+      .team-role {
+        font-size: 12px;
+      }
+
+      .team-desc {
+        font-size: 12px;
+      }
+
+      .team-section-title {
+        font-size: 17px;
+        padding: 14px 20px;
+        margin-top: 40px;
+      }
+
+      .hierarchy {
+        padding: 28px 20px;
+        margin-top: 48px;
+      }
+
+      .hier-row {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 12px 16px;
+      }
+
+      .hier-name,
+      .hier-title {
+        min-width: unset;
+      }
+
+      .hier-title {
+        font-size: 13px;
+      }
+
+      .hier-name {
+        font-size: 13px;
+      }
+
+      .hier-desc {
+        font-size: 12px;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .leadership-row {
+        gap: 16px;
+      }
+
+      .leader-card-top h3 {
+        font-size: 16px;
+      }
+
+      .leader-card-body p {
+        font-size: 13px;
+      }
+
+      .hierarchy {
+        padding: 20px 16px;
+      }
+
+      .hier-connector {
+        margin-left: 18px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .team-grid {
+        padding: 12px;
+        gap: 12px;
+      }
+
+      .team-card {
+        padding: 18px 14px;
+      }
+
+      .avatar {
+        width: 60px;
+        height: 60px;
+      }
+
+      .team-section-title {
+        font-size: 15px;
+        padding: 12px 16px;
+      }
+
+      .hier-row {
+        padding: 10px 12px;
+      }
+    }
+  </style>
+  <link rel="canonical" href="https://appliedscienceresearchorganization.org.np/team.html">
+
+  <meta property="og:title" content="ASRO | Team — STEM Education Leaders in Biratnagar, Nepal">
+  <meta property="og:description"
+    content="Meet the ASRO team, the dedicated youth leaders of Applied Science &amp; Research Organization in Biratnagar, Nepal. Our STEM education team delivers robotics, IoT training, astronomy workshops, and hands-on science programs.">
+  <meta property="og:url" content="https://appliedscienceresearchorganization.org.np/team.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://appliedscienceresearchorganization.org.np/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ASRO | Team — STEM Education Leaders in Biratnagar, Nepal">
+  <meta name="twitter:description"
+    content="Meet the ASRO team, the dedicated youth leaders of Applied Science &amp; Research Organization in Biratnagar, Nepal. Our STEM education team delivers robotics, IoT training, astronomy workshops, and hands-on science programs.">
+  <meta name="twitter:image" content="https://appliedscienceresearchorganization.org.np/logo.png">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://appliedscienceresearchorganization.org.np"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Team",
+      "item": "https://appliedscienceresearchorganization.org.np/team.html"
+    }
+  ]
+}
+</script>
+
+  <link rel="preload" href="style.css" as="style">
+</head>
+
+<body>
+
+  <header>
+    <nav id="mainNav">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="ASRO Logo - STEM Education Nepal">
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">ASRO</span>
+          <span class="nav-logo-tagline">Experience Science Beyond Theory</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="research.html">Programs</a>
+          <ul class="dropdown-menu"
+           >
+            <li><a href="stem-education-nepal.html" style="color:var(--navy); padding:8px;">STEM Education</a></li>
+            <li><a href="robotics-for-students.html" style="color:var(--navy); padding:8px;">Robotics</a></li>
+            <li><a href="iot-training.html" style="color:var(--navy); padding:8px;">IoT Training</a></li>
+            <li><a href="astronomy-programs.html" style="color:var(--navy); padding:8px;">Astronomy</a></li>
+            <li><a href="events.html" style="color:var(--navy); padding:8px;">Events</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">More</a>
+          <ul class="dropdown-menu"
+           >
+            <li><a href="projects.html" style="color:var(--navy); padding:8px;">Projects</a></li>
+            <li><a href="gallery.html" style="color:var(--navy); padding:8px;">Gallery</a></li>
+            <li><a href="membership.html" style="color:var(--navy); padding:8px;">Membership</a></li>
+            <li><a href="donate.html" style="color:var(--navy); padding:8px;">Donate</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="team.html" class="active">Team</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+
+      <div class="hamburger" aria-label="Toggle Navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="page-hero-content">
+        <div class="breadcrumb">Home / <span>Team</span></div>
+        <h1>Meet Our <span>Team</span></h1>
+        <p>Dedicated STEM education leaders delivering robotics, IoT training, astronomy workshops, and hands-on science programs across Biratnagar, Nepal.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <!-- LEADERSHIP -->
+      <div class="section-header">
+        <div class="tag">Leadership Team</div>
+        <h2 class="section-title">The Founding <span>Leaders</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div class="leadership-row">
+        <!-- Jeevan Sharma -->
+        <div class="leader-card reveal">
+          <div class="leader-card-top">
+            <div class="leader-avatar">
+              <div class="ring"></div>
+              <img src="Team Photo/Jeevaan Sharma.jpeg" alt="ASRO Jeevan Sharma - Founder &amp; Chairman, ASRO"
+                style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+            </div>
+            <h3>Jeevaan Sharma</h3>
+            <div class="role">Founder &amp; Chairman</div>
+          </div>
+          <div class="leader-card-body">
+            <p>Leads the entire organization, makes final decisions and sets goals. Represents ASRO in public and
+              events, and ensures all departments work together to deliver STEM education.</p>
+          </div>
+        </div>
+        <!-- Alok Singh -->
+        <div class="leader-card reveal" data-delay="120">
+          <div class="leader-card-top">
+            <div class="leader-avatar">
+              <div class="ring"></div>
+              <img src="Team Photo/Alok Singh.jpeg" alt="ASRO Alok Singh - Co-founder, ASRO"
+                style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+            </div>
+            <h3>Alok Singh</h3>
+            <div class="role">Co-founder</div>
+          </div>
+          <div class="leader-card-body">
+            <p>Handles daily operations of ASRO, coordinates between all departments, and ensures plans are properly
+              executed for our biology, environmental science and other programs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADMINISTRATION -->
+      <div class="team-section-title reveal" style="margin-top:56px;">
+        <span class="icon">🏛️</span> Administration Team
+        <span class="team-section-label">7 Members</span>
+      </div>
+      <div class="team-grid" style="border-radius:0 0 var(--radius-md) var(--radius-md);">
+        <!-- Prakash Thakur -->
+        <div class="team-card reveal">
+          <div class="avatar">
+            <img src="Team Photo/Prakash Thakur.jpeg" alt="ASRO Prakash Thakur - Secretary, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Prakash Thakur</h3>
+          <div class="team-role">Secretary</div>
+          <p class="team-desc">Keeps records of meetings and documents. Manages official communication and maintains
+            organization files and reports.</p>
+        </div>
+        <!-- Isha Jha -->
+        <div class="team-card reveal" data-delay="60">
+          <div class="avatar">
+            <img src="Team Photo/Isha Jha.jpeg" alt="ASRO Isha Jha - Co-Secretary, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Isha Jha</h3>
+          <div class="team-role">Co-Secretary</div>
+          <p class="team-desc">Supports the Secretary in keeping records, managing official communication, and
+            maintaining organization files and reports.</p>
+        </div>
+        <!-- Sandesh Bikram Rana -->
+        <div class="team-card reveal" data-delay="120">
+          <div class="avatar">
+            <img src="Team Photo/Sandesh Bikram Rana.jpeg" alt="ASRO Sandesh Bikram Rana - Law Administrator, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Sandesh Bikram Rana</h3>
+          <div class="team-role">Law Administrator</div>
+          <p class="team-desc">Ensures ASRO follows rules and regulations. Manages permissions and legal matters, and
+            creates internal policies.</p>
+        </div>
+        <!-- Sudarshan Regmi -->
+        <div class="team-card reveal" data-delay="180">
+          <div class="avatar">
+            <img src="Team Photo/Sudarshan Regmi.jpeg" alt="ASRO Sudarshan Regmi - Treasurer, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Sudarshan Regmi</h3>
+          <div class="team-role">Treasurer</div>
+          <p class="team-desc">Manages funds and budgeting. Keeps track of income and expenses, and ensures proper
+            financial use.</p>
+        </div>
+        <!-- Sujan Dahal -->
+        <div class="team-card reveal" data-delay="240">
+          <div class="avatar">
+            <img src="Team Photo/Sujan Dahal.jpeg" alt="ASRO Sujan Dahal - Administrative Member, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Sujan Dahal</h3>
+          <div class="team-role">Administrative Member</div>
+          <p class="team-desc">Supports administrative operations and assists in organizational management and
+            coordination.</p>
+        </div>
+        <!-- Dipsun Khatiwada -->
+        <div class="team-card reveal" data-delay="300">
+          <div class="avatar">
+            <img src="Team Photo/Dipsun Khatiwada.jpeg" alt="ASRO Dipsun Khatiwada - Managing Director, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Dipsun Khatiwada</h3>
+          <div class="team-role">Managing Director</div>
+          <p class="team-desc">Supports administrative operations and assists in organizational management and
+            coordination.</p>
+        </div>
+        <!-- Anjali Sharma -->
+        <div class="team-card reveal" data-delay="360">
+          <div class="avatar">
+            <div class="avatar-inner">AS</div>
+          </div>
+          <h3>Anjali Sharma</h3>
+          <div class="team-role">Coordinator</div>
+          <p class="team-desc">Coordinates between departments, manages communication flow, and ensures smooth execution
+            of organizational activities.</p>
+        </div>
+      </div>
+
+      <!-- PLANNING & PARTNERSHIP -->
+      <div class="team-section-title reveal">
+        <span class="icon">🤝</span> Planning &amp; Partnership
+        <span class="team-section-label">2 Members</span>
+      </div>
+      <div class="team-grid"
+        style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));border-radius:0 0 var(--radius-md) var(--radius-md);">
+        <!-- Tushant Chaudhary -->
+        <div class="team-card reveal">
+          <div class="avatar">
+            <img src="Team Photo/Tushant Chaudhary.jpeg" alt="ASRO Tushant Chaudhary - Research Head, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Tushant Chaudhary</h3>
+          <div class="team-role">Research Head</div>
+          <p class="team-desc">Leads research initiatives and oversees experiment development. Drives innovation and
+            scientific exploration within the organization.</p>
+        </div>
+        <!-- Councillor & Partnership - Hiring -->
+        <div class="team-card reveal" data-delay="100">
+          <div class="avatar">
+            <div class="avatar-inner" style="background:var(--gray-400); font-size:32px;">+</div>
+          </div>
+          <h3 style="color:var(--gray-400);">Open Position</h3>
+          <div class="team-role" style="color:var(--gray-400);">Councillor &amp; Partnership</div>
+          <p class="team-desc">Builds partnerships with schools and organizations, brings collaboration opportunities,
+            and advises on improvement and growth.</p>
+        </div>
+      </div>
+
+      <!-- CREATIVE & TECHNICAL -->
+      <div class="team-section-title reveal">
+        <span class="icon">💻</span> Creative &amp; Technical Team
+        <span class="team-section-label">3 Members</span>
+      </div>
+      <div class="team-grid" style="border-radius:0 0 var(--radius-md) var(--radius-md);">
+
+        <!-- Mohit Shrestha -->
+        <div class="team-card reveal">
+          <div class="avatar">
+            <img src="Team Photo/Mohit Shrestha.jpg" alt="ASRO Mohit Shrestha - Web Developer, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Mohit Shrestha</h3>
+          <div class="team-role">Web Developer</div>
+          <p class="team-desc">Builds experiment models and technical setups. Supports innovation and project
+            development, and handles any technical systems as needed.</p>
+        </div>
+
+        <!-- Creative Director - Hiring -->
+        <div class="team-card reveal" data-delay="100">
+          <div class="avatar">
+            <div class="avatar-inner" style="background:var(--gray-400); font-size:32px;">+</div>
+          </div>
+          <h3 style="color:var(--gray-400);">Open Position</h3>
+          <div class="team-role" style="color:var(--gray-400);">Creative Director</div>
+          <p class="team-desc">Designs how experiments are presented. Makes demonstrations attractive and engaging, and
+            plans creative concepts and themes.</p>
+        </div>
+
+        <!-- Graphic Designer - Hiring -->
+        <div class="team-card reveal" data-delay="200">
+          <div class="avatar">
+            <div class="avatar-inner" style="background:var(--gray-400); font-size:32px;">+</div>
+          </div>
+          <h3 style="color:var(--gray-400);">Open Position</h3>
+          <div class="team-role" style="color:var(--gray-400);">GRAPHIC DESIGNER</div>
+          <p class="team-desc">Designs posters, banners, and visuals. Creates promotional and presentation materials,
+            and builds ASRO's visual identity.</p>
+        </div>
+      </div>
+
+      <!-- PUBLIC & PROMOTION -->
+      <div class="team-section-title reveal">
+        <span class="icon">📢</span> Public &amp; Promotion Team
+        <span class="team-section-label">2 Members</span>
+      </div>
+      <div class="team-grid" style="border-radius:0 0 var(--radius-md) var(--radius-md);">
+        <!-- Jiwan Dahal -->
+        <div class="team-card reveal">
+          <div class="avatar">
+            <img src="Team Photo/Jiwan Dahal.jpeg" alt="ASRO Jiwan Dahal - Public Incharge, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Jiwan Dahal</h3>
+          <div class="team-role">Incharge</div>
+          <p class="team-desc">Leads the Public &amp; Promotion team. Presents and explains experiments during events,
+            engages audience, and represents ASRO on stage.</p>
+        </div>
+        <!-- Aryan Urawn -->
+        <div class="team-card reveal" data-delay="100">
+          <div class="avatar">
+            <img src="Team Photo/Aryan Uraw.jpeg" alt="ASRO Aryan Urawn - Marketing Management, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Aryan Urawn</h3>
+          <div class="team-role">Marketing Management</div>
+          <p class="team-desc">Promotes ASRO through social media and campaigns. Increases audience reach and
+            participation, and builds ASRO's brand and awareness.</p>
+        </div>
+      </div>
+
+      <!-- GENERAL MEMBERS -->
+      <div class="team-section-title reveal">
+        <span class="icon">👥</span> General Members
+        <span class="team-section-label">2 Members</span>
+      </div>
+      <div class="team-grid" style="border-radius:0 0 var(--radius-md) var(--radius-md);">
+        <!-- Sadhana Bhattarai -->
+        <div class="team-card reveal" data-delay="100">
+          <div class="avatar">
+            <img src="Team Photo/Sadhana Bhattarai.jpeg" alt="ASRO Sadhana Bhattarai - General Member, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Sadhana Bhattarai</h3>
+          <div class="team-role">General Member</div>
+          <p class="team-desc">Helps in decision-making, gives suggestions and feedback, and supports major
+            organizational plans.</p>
+        </div>
+        <!-- Aarati Pokharel -->
+        <div class="team-card reveal" data-delay="200">
+          <div class="avatar">
+            <img src="Team Photo/Aarati Pokharel.jpeg" alt="ASRO Aarati Pokharel - General Member, ASRO"
+              style="width:100%; height:100%; object-fit:cover;" loading="lazy">
+          </div>
+          <h3>Aarati Pokharel</h3>
+          <div class="team-role">General Member</div>
+          <p class="team-desc">Helps in decision-making, gives suggestions and feedback, and supports major
+            organizational plans.</p>
+        </div>
+      </div>
+
+      <!-- HIERARCHY CHART -->
+      <div class="hierarchy reveal" style="margin-top:80px;">
+        <div class="section-header">
+          <div class="tag">Org Chart</div>
+          <h2 class="section-title" style="font-size:28px;">Team <span>Hierarchy</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="hier-tree" style="margin-top:32px;">
+          <div class="hier-row">
+            <div class="hier-dot" style="background:var(--green);box-shadow:0 0 0 3px rgba(90,158,58,0.2);"></div>
+            <div class="hier-title">Chairman</div>
+            <div class="hier-name">Jeevan Sharma</div>
+            <div class="hier-desc">Leads the organization, final decisions &amp; goals</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:var(--navy);box-shadow:0 0 0 3px rgba(26,58,92,0.2);"></div>
+            <div class="hier-title">Co-founder</div>
+            <div class="hier-name">Alok Singh</div>
+            <div class="hier-desc">Co-founder &amp; strategic leadership</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:var(--green);box-shadow:0 0 0 3px rgba(90,158,58,0.2);"></div>
+            <div class="hier-title">Managing Director</div>
+            <div class="hier-name">Dipsun Khatiwada</div>
+            <div class="hier-desc">Daily operations &amp; departmental coordination</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:var(--green);opacity:0.7;"></div>
+            <div class="hier-title">Secretary</div>
+            <div class="hier-name">Prakash Thakur</div>
+            <div class="hier-desc">Records, communication &amp; files</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:var(--green);opacity:0.5;"></div>
+            <div class="hier-title">Co-Secretary</div>
+            <div class="hier-name">Isha Jha</div>
+            <div class="hier-desc">Supports Secretary &amp; records management</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:#5a2d82;"></div>
+            <div class="hier-title">Law Administrator</div>
+            <div class="hier-name">Sandesh Rana</div>
+            <div class="hier-desc">Rules, permissions &amp; internal policies</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:#b8860b;"></div>
+            <div class="hier-title">Treasurer</div>
+            <div class="hier-name">Sudarshan Regmi</div>
+            <div class="hier-desc">Funds, budgeting &amp; financial oversight</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:#1a8a8a;"></div>
+            <div class="hier-title">Coordinator</div>
+            <div class="hier-name">Anjali Sharma</div>
+            <div class="hier-desc">Inter-department coordination</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:#8B4513;opacity:0.6;"></div>
+            <div class="hier-title">Administrative Member</div>
+            <div class="hier-name">Sujan Dahal</div>
+            <div class="hier-desc">Administrative support &amp; management</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:var(--gray-400);"></div>
+            <div class="hier-title">Research Head</div>
+            <div class="hier-name">Tushant Chaudhary</div>
+            <div class="hier-desc">Research, innovation &amp; experiments</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:var(--gray-400);opacity:0.5;"></div>
+            <div class="hier-title">Councillor &amp; Partnership</div>
+            <div class="hier-name">Hiring open</div>
+            <div class="hier-desc">Partnerships &amp; collaboration</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:var(--green);opacity:0.5;"></div>
+            <div class="hier-title">Creative &amp; Technical</div>
+            <div class="hier-name">Mohit · Open · Naresh</div>
+            <div class="hier-desc">Development, design &amp; visuals</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:var(--navy);opacity:0.5;"></div>
+            <div class="hier-title">Public &amp; Promotion</div>
+            <div class="hier-name">Jiwan · Aryan</div>
+            <div class="hier-desc">Hosting, marketing &amp; branding</div>
+          </div>
+          <div class="hier-connector"></div>
+          <div class="hier-row">
+            <div class="hier-dot" style="background:#FFA500;opacity:0.5;"></div>
+            <div class="hier-title">General Members</div>
+            <div class="hier-name">Sadhana · Aarati</div>
+            <div class="hier-desc">Suggestions, feedback &amp; support</div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- JOIN CTA -->
+    <section class="section section-alt" style="text-align:center;padding:80px 5vw;">
+      <div class="tag" style="justify-content:center;margin-bottom:16px;"><span style="display:none"></span>Join ASRO
+      </div>
+      <h2 class="section-title" style="max-width:500px;margin:0 auto 16px;">Want to <span>Join</span> Our Team?</h2>
+      <p style="color:var(--muted);font-size:16px;max-width:480px;margin:0 auto 20px;line-height:1.8;">We welcome
+        passionate students and science enthusiasts who believe in making STEM education and innovative science programs
+        accessible to all in Biratnagar and across Nepal.</p>
+      <p style="font-size:15px;margin-bottom:36px;color:var(--navy);">Reach us at: <strong><a
+            href="mailto:info@appliedscienceresearchorganization.org.np"
+            style="color:var(--green);text-decoration:none;">info@appliedscienceresearchorganization.org.np</a></strong>
+      </p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch →</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <img src="logo.png" alt="ASRO Nepal - STEM Research Organization" style="height:48px;">
+          <div class="nav-logo-text"><span class="nav-logo-name">ASRO</span><span class="nav-logo-tagline">Experience Science Beyond Theory</span></div>
+        </div>
+        <p>Applied Science &amp; Research Organization — Ward No. 4, Biratnagar Metropolitan City, Nepal. STEM Education, Robotics, IoT Training, Astronomy Programs.</p>
+      </div>
+      <div class="footer-col"><h5>Pages</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>The Team</h5><ul><li><a href="#leadership">Leadership</a></li><li><a href="#administration">Administration</a></li><li><a href="#creative-tech">Creative &amp; Tech</a></li><li><a href="#general-members">General Members</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="#">Ward No. 4, Biratnagar</a></li><li><a href="mailto:info@appliedscienceresearchorganization.org.np">info@appliedscienceresearchorganization.org.np</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ASRO — Applied Science &amp; Research Organization. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="contact.html">Contact</a><a href="about.html">About</a></div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
